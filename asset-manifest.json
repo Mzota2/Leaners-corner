@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.45ac22ef.css",
+    "main.js": "/react-gh-pages/static/js/main.501cbb1b.js",
+    "static/media/school1.jpg": "/react-gh-pages/static/media/school1.981b9d6eb9aa19d2c241.jpg",
+    "static/media/aboutImage.png": "/react-gh-pages/static/media/aboutImage.3f80a71abd70b73ac361.png",
+    "static/media/school2.png": "/react-gh-pages/static/media/school2.466890f931d34e77814e.png",
+    "static/media/school.jpeg": "/react-gh-pages/static/media/school.cf96e4158f1df8cd7068.jpeg",
+    "static/media/assist.jpg": "/react-gh-pages/static/media/assist.3249cab703189a755152.jpg",
+    "static/media/background.jpg": "/react-gh-pages/static/media/background.28f8925ddce8c08713ac.jpg",
+    "static/media/contact.jpg": "/react-gh-pages/static/media/contact.95c42366e930a3185ba0.jpg",
+    "static/media/computer.png": "/react-gh-pages/static/media/computer.1a02fdb2e8f2e903eca1.png",
+    "static/media/search.png": "/react-gh-pages/static/media/search.34e4c6f4447907076fa0.png",
+    "index.html": "/react-gh-pages/index.html",
+    "main.45ac22ef.css.map": "/react-gh-pages/static/css/main.45ac22ef.css.map",
+    "main.501cbb1b.js.map": "/react-gh-pages/static/js/main.501cbb1b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.45ac22ef.css",
+    "static/js/main.501cbb1b.js"
+  ]
+}
