@@ -27,14 +27,14 @@ export default function List(props){
                     <NavLink className='active item' to='/sign'>Curriculum</NavLink>
                 </div>
                 
-                {menu?<div  className="item--container">
+                {window.innerWidth <= 700? menu?<div  className="item--container">
                     
                     
                     <NavLink onClick={handleClick} className='active item' to='/Leaners-corner/'>Home</NavLink>
                     <NavLink onClick={handleClick}  className='active item' to='/about'>About</NavLink>
                     <NavLink onClick={handleClick}  className='active item' to='/contact'>Contact</NavLink>
                     <NavLink onClick={handleClick}  className='active item' to='/sign'>Curriculum</NavLink>
-                </div>: console.log('we')}
+                </div>:console.log('we'):console.log('we')}
                 
             </nav>
 
