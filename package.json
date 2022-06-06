@@ -1,9 +1,9 @@
 {
   "name": "leaners-corner",
   "version": "0.1.0",
-  "homepage": "https://mzota2.github.io/react-gh-pages",
+  "homepage": "https://Mzota2.github.io/react-gh-pages",
  
-  "private": true,
+  "private": false,
   "dependencies": {
     "@mui/icons-material": "^5.8.0",
     "@testing-library/jest-dom": "^5.16.4",
@@ -17,7 +17,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+  "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
