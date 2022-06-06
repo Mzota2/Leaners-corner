@@ -1,13 +1,139 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Poppins:ital,wght@0,400;1,500&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+.menu--container{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(12, 16, 54);
+}
+.nav--items{
+    margin: 0 auto;
+    height: 100%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.title--container{
+    margin: 0 10px;
+    font-family: 'Lobster';
+    font-size: 20px;
+    color: whitesmoke;
+    
+}
+.nav--title{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    padding: 0 5px;
+}
+.nav--title:hover{
+    cursor: pointer;
+}
+.item--container2 > .item{
+    text-decoration: none;
+    padding: 0 27px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.item:hover{
+    color: rgb(255, 196, 0);
+}
+.menu--icon{
+    display: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+@media (max-width:750px) {
+    .nav--title{
+        display: flex;
+        align-items: center;
+        width: 55%;
+        
+    }
+    .title--container{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu--container{
+        width: 100%;
+        height: 15vh;
+        background-color: rgb(12, 16, 54);
+     
+    }
+    .menu--icon{
+        width: 100%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    .menu--icon:hover{
+        cursor: pointer;
+    }
+  
+    .nav--items{
+        margin: 0 auto;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+    .title--container{
+        height: 90%;
+        margin: 0 10px;
+        font-family: 'Lobster';
+        color: whitesmoke;
+        border-radius: 5px;
+    }
+    .item--container > .item{
+        text-decoration: none;
+        padding: 0 27px;
+        color: white;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+    }
+  
+    .item--container{
+        z-index: 1;
+        width: fit-content;
+        height: 200px;
+        top: 5%;
+        left: 70%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgb(12, 16, 54);
+    }
+    .item--container2 > .item{
+        display: none;
+        text-decoration: none;
+        padding: 0 27px;
+        color: white;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+  
+    .item:hover{
+        color: rgb(13, 13, 41);
+        background-color: white;
+    }
+  
+    
 }
