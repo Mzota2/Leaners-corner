@@ -29,6 +29,7 @@ export default function List(props){
                 
                 {menu?<div  className="item--container">
                     
+                    
                     <NavLink onClick={handleClick} className='active item' to='/Leaners-corner/'>Home</NavLink>
                     <NavLink onClick={handleClick}  className='active item' to='/about'>About</NavLink>
                     <NavLink onClick={handleClick}  className='active item' to='/contact'>Contact</NavLink>
