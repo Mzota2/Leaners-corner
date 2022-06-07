@@ -4,7 +4,7 @@ import assistImage from '../images/assist.jpg'
 
 export default function Contact(props){
     return(
-        <div>
+        <div className="ac--container">
             <div className="contact--title--container">
                 <h3 className="contact--title">Contact Us</h3>
 

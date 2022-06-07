@@ -53,11 +53,12 @@ main{
     font-family: 'Poppins', sans-serif;
 }
 .previous{
+    float: left;
     margin-left: 10px;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
-    margin-top: 20px;
+    margin-top: 10px;
 
 }
 .previous:hover, .finish:hover{
@@ -68,7 +69,9 @@ main{
     color: rgb(0, 166, 255);
 }
 .finish{
-    margin-left: 10px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
     color: whitesmoke;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;

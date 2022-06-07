@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 
 export default function About(props){
     return(
-        <div>
+        <div className="ab--container">
             <div className="about--title--container">
                 <h3 className="about--title">Learn About Us</h3>
             </div>

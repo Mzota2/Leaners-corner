@@ -288,6 +288,10 @@ body{
     }
     .founder--ifo{
         font-size:14px;
+        width: 70%;
+    }
+    .founder--say{
+        font-size: 13px;
     }
     
 }
