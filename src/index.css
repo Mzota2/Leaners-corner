@@ -55,6 +55,13 @@ body{
 
 
 @media (max-width:750px) {
+    .title--container{
+        margin: 0 5px;
+        font-family: 'Lobster';
+        font-size: 20px;
+        color: whitesmoke;
+        
+    }
     .nav--title{
         display: flex;
         align-items: center;
