@@ -164,5 +164,8 @@
         margin: 17px auto;
         font-family: 'Poppins', sans-serif;
     }
+    .goto{
+        padding: 10px 0;
+    }
     
 }
