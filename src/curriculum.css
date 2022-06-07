@@ -135,8 +135,12 @@
         color: black;
        
     }
+  
+    
+}
+@media (max-width:400px) {
     .copy{
-        font-size: 13px;
+        font-size: 10px;
     }
     
 }
