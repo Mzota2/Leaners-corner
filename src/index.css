@@ -66,7 +66,7 @@ body{
         display: flex;
         align-items: center;
         width: 100%;
-        font-size: 20px;
+        font-size: 25px;
         
     }
     .title--container{
@@ -78,7 +78,7 @@ body{
     .menu--container{
         position: relative;
         width: 100%;
-        height: fit-content;
+        height: 40px;
         background-color: rgb(12, 16, 54);
      
     }
