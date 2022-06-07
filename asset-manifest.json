@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Leaners-corner/static/css/main.cb0e86d9.css",
+    "main.css": "/Leaners-corner/static/css/main.fd66fd47.css",
     "main.js": "/Leaners-corner/static/js/main.4aee2d25.js",
     "static/media/school1.jpg": "/Leaners-corner/static/media/school1.981b9d6eb9aa19d2c241.jpg",
     "static/media/aboutImage.png": "/Leaners-corner/static/media/aboutImage.3f80a71abd70b73ac361.png",
@@ -12,11 +12,11 @@
     "static/media/computer.png": "/Leaners-corner/static/media/computer.1a02fdb2e8f2e903eca1.png",
     "static/media/search.png": "/Leaners-corner/static/media/search.34e4c6f4447907076fa0.png",
     "index.html": "/Leaners-corner/index.html",
-    "main.cb0e86d9.css.map": "/Leaners-corner/static/css/main.cb0e86d9.css.map",
+    "main.fd66fd47.css.map": "/Leaners-corner/static/css/main.fd66fd47.css.map",
     "main.4aee2d25.js.map": "/Leaners-corner/static/js/main.4aee2d25.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb0e86d9.css",
+    "static/css/main.fd66fd47.css",
     "static/js/main.4aee2d25.js"
   ]
 }
