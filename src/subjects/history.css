@@ -1,27 +1,31 @@
 *{
     padding: 0;
     margin: 0;
+    text-decoration: none;
     box-sizing: border-box;
 }
 .questions-container{
     position: relative;
 }
 .hs--goto{
-    width:fit-content;
+    width: fit-content;
     padding: 0 5px;
-    height: 40px;
-    border-radius: 5px;
+    height: 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid white;
     display: flex;
-    text-align: center;
     align-items: center;
-    background-color: rgb(29, 29, 65);
-    position: absolute;
-    top: 2%;
-    left: 60%;
+    justify-content: center;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+}
+.goto{
+    text-decoration: none;
 }
 .hs--goto:hover{
+    border: none;
+    background-color: rgb(14, 14, 44);
     cursor: pointer;
     color: aqua;
 }

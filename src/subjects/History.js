@@ -66,7 +66,7 @@ import { NavLink } from "react-router-dom";
         <div className="questions_container">
             <p onClick={handleFinish} className="finish"><i className="fab fa-solid fa-xmark"></i>  Finish session</p>
             <p onClick={handlePrevious} className="previous"> <i className="fab fa-solid fa-angle-left"></i> Previous question</p>
-            <NavLink to='/historylessons'><p className="hs--goto">Go To Lessons<i class=" fab fas fa-angle-double-right"></i></p></NavLink>
+            <NavLink className='goto' to='/historylessons'><p className="hs--goto">Go To Lessons<i class=" fab fas fa-angle-double-right"></i></p></NavLink>
 
             <div className="inner_container"><br/><br/>
                 <p id="question">{question}</p>

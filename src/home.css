@@ -23,6 +23,7 @@
     width: 100%;
     font-size: 30px;
     text-align: center;
+    color:whitesmoke;
 }
 .image--text> h4{
     text-align: center;
@@ -227,4 +228,13 @@
         background-image: url(./images/school2.png);
         background-size: cover;
     }
+}
+@media (max-width:400px) {
+    .image--text> h3{
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        color:whitesmoke;
+    }
+    
 }

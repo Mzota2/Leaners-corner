@@ -111,7 +111,7 @@ body{
         border-radius: 5px;
     }
     .item--container > .item{
-        font-size: 15px;
+        font-size: 17px;
         text-decoration: none;
         padding: 0 27px;
         color: white;
@@ -120,6 +120,7 @@ body{
     }
   
     .item--container{
+        margin-top: 10px;
         width: 100%;
         display: flex;
         flex-direction: column;

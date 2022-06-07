@@ -37,10 +37,10 @@ export default function Contact(props){
                 <div className="contact--more--info">
                     <hr className="line--info"></hr>
                     <h4>Feel Free To Contact Us <br/>For More Information.</h4>
-                    <button className="contact--info--button">Contact Now <i class="fas fa-arrow-right"></i></button>
+                    <a href="#contact" className="contact--info--button">Contact Now <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
-            <div className="where--container">
+            <div id="contact" className="where--container">
                 <div className="where--header">
                     <hr className="hr"/>
                     <h3>Where You Can Find Us</h3>
