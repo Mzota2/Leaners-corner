@@ -197,9 +197,13 @@
         padding: 10px 0;
     }
     .hs--lesson--title{
-        font-size: 19px;
+        font-size: 18px;
         padding: 5px 0;
         font-family: 'Poppins', sans-serif;
+    }
+    .hs--lesson--display{
+        font-size: 18px;
+        padding: 0 5px;
     }
     
 }
