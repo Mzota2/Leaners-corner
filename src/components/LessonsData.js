@@ -1,8 +1,33 @@
-
+import agricultureImage1 from '../images2/agriculture.jpg';
+import agricultureImage2 from '../images2/agriculture2.jpg';
+import biologyImage from '../images2/biology.jpg';
+import chemistryImage from '../images2/chemistry.jpg';
+import physicsImage from '../images2/physics.jpg';
+import mathImage1 from '../images2/mathematics.jpg';
+import englishImage from '../images2/english.jpg';
+import historyImage from '../images2/history.jpg';
+import chichewa2Image from '../images2/chichewa2.jpg';
+import geographyImage from '../images2/geography.jpg';
+import french2Image from '../images2/french2.jpg';
+import socialImage from '../images2/social.jpg';
+import computerImage from '../images2/computer.jpg';
+import bkImage1 from '../images2/bible.jpg';
+import lifeImage1 from '../images2/life.jpg';
+import lifeImage2 from '../images2/life2.jpg';
+import scienceImage from '../images2/science.jpg';
+import businessImage from '../images2/business.jpg';
+import chichewaImage1 from '../images2/chichewa.jpg';
+import agriculture2Image from '../images2/agriculture2.jpg';
+import frenchImage1 from '../images2/french.jpg';
+import artsImage from '../images2/arts.jpg';
+import socialImage2 from '../images2/social2.jpg';
+import bibleImage2 from '../images2/bible2.jpg';
+import mathImage2 from '../images2/mathematics2.jpg';
+import admaImage from '../images2/adma.jpg';
 const LessonsData = [
     {
         id:1,
-        image:'../images/agriculture.jpg',
+        image:agricultureImage1,
         title:'Agriculture Lessons SEC',
         description:'This course covers broad topics in Agriculture',
         link:'/agriQuiz'
@@ -10,7 +35,7 @@ const LessonsData = [
 
     {
         id:2,
-        image:'../images/biology.jpg',
+        image:biologyImage,
         title:'Biology Lessons SEC',
         description:'This course covers broad topics in Biology',
         link:'/bioQuiz'
@@ -18,7 +43,7 @@ const LessonsData = [
     },
     {
         id:3,
-        image:'../images/english.jpg',
+        image:englishImage,
         title:'English Lessons SEC',
         description:'This course covers broad topics in English',
         link:'/englishQuiz'
@@ -26,7 +51,7 @@ const LessonsData = [
     },
     {
         id:4,
-        image:'../images/mathematics.jpg',
+        image:mathImage1,
         title:'Mathematics Lessons SEC',
         description:'This course covers broad topics in Mathematics',
         link:'/mathematicsQuiz'
@@ -34,7 +59,7 @@ const LessonsData = [
     },
     {
         id:5,
-        image:'../images/history.jpg',
+        image:historyImage,
         title:'History Lessons SEC',
         description:'This course covers broad topics in History',
         link:'/history'
@@ -42,7 +67,7 @@ const LessonsData = [
     },
     {
         id:6,
-        image:'../images/geography.jpg',
+        image:geographyImage,
         title:'Geography Lessons SEC',
         description:'This course covers broad topics in Geography',
         link:'/geogQuiz'
@@ -50,7 +75,7 @@ const LessonsData = [
     },
     {
         id:7,
-        image:'../images/physics.jpg',
+        image:physicsImage,
         title:'Physics Lessons SEC',
         description:'This course covers broad topics in Physics',
         link:'/physicsQuiz'
@@ -58,7 +83,7 @@ const LessonsData = [
     }, 
     {
         id:8,
-        image:'../images/chichewa2.jpg',
+        image:chichewa2Image,
         title:'Chichewa Lessons PRI',
         description:'This course covers broad topics in Chichewa',
         link:'/chichewaQuiz'
@@ -68,7 +93,7 @@ const LessonsData = [
     ,
     {
         id:9,
-        image:'../images/french2.jpg',
+        image:french2Image,
         title:'French Lessons PRI',
         description:'This course covers broad topics in French',
         link:'/frenchQuiz'
@@ -77,7 +102,7 @@ const LessonsData = [
     ,
     {
         id:10,
-        image:'../images/chemistry.jpg',
+        image:chemistryImage,
         title:'Chemistry Lessons SEC',
         description:'This course covers broad topics in Chemistry',
         link:'/chemistryQuiz'
@@ -86,7 +111,7 @@ const LessonsData = [
     ,
     {
         id:11,
-        image:'../images/computer.jpg',
+        image:computerImage,
         title:'Computer Lessons SEC',
         description:'This course covers broad topics in Computer',
         link:'/computerQuiz'
@@ -95,7 +120,7 @@ const LessonsData = [
     ,
     {
         id:12,
-        image:'../images/social.jpg',
+        image:socialImage,
         title:'Social Lessons SEC',
         description:'This course covers broad topics in Social',
         link:'/socialQuiz'
@@ -104,7 +129,7 @@ const LessonsData = [
     ,
     {
         id:13,
-        image:'../images/bible.jpg',
+        image:bkImage1,
         title:'Bible Knowledge Lessons SEC',
         description:'This course covers broad topics in Bible Knowledge',
         link:'/bkQuiz'
@@ -113,7 +138,7 @@ const LessonsData = [
     ,
     {
         id:14,
-        image:'../images/life.jpg',
+        image:lifeImage1,
         title:'LifeSkills Lessons SEC',
         description:'This course covers broad topics in LifeSkills',
         link:'/lifeQuiz'
@@ -122,7 +147,7 @@ const LessonsData = [
     ,
     {
         id:15,
-        image:'../images/business.jpg',
+        image:businessImage,
         title:'Business Lessons SEC',
         description:'This course covers broad topics in Business',
         link:'/businessQuiz'
@@ -131,7 +156,7 @@ const LessonsData = [
     ,
     {
         id:16,
-        image:'../images/science.jpg',
+        image:scienceImage,
         title:'Primary Science Lessons PRI',
         description:'This course covers broad topics in Primary Science',
         link:'/scienceQuiz'
@@ -140,7 +165,7 @@ const LessonsData = [
     ,
     {
         id:17,
-        image:'../images/agriculture2.jpg',
+        image:agriculture2Image,
         title:'Agriculture Lessons PRI',
         description:'This course covers broad topics in Agriculture',
         link:'/agriQuiz'
@@ -149,7 +174,7 @@ const LessonsData = [
     ,
     {
         id:19,
-        image:'../images/chichewa.jpg',
+        image:chichewaImage1,
         title:'Chichewa Lessons PRI',
         description:'This course covers broad topics in Chichewa',
         link:'/chichewaQuiz'
@@ -158,7 +183,7 @@ const LessonsData = [
     ,
     {
         id:20,
-        image:'../images/french.jpg',
+        image:frenchImage1,
         title:'French Lessons PRI',
         description:'This course covers broad topics in French',
         link:'/frenchQuiz'
@@ -167,7 +192,7 @@ const LessonsData = [
     ,
     {
         id:21,
-        image:'../images/social2.jpg',
+        image:socialImage2,
         title:'Social Lessons PRI',
         description:'This course covers broad topics in Social',
         link:'/socialQuiz'
@@ -176,7 +201,7 @@ const LessonsData = [
     ,
     {
         id:22,
-        image:'../images/arts.jpg',
+        image:artsImage,
         title:'Expressive Arts Lessons PRI',
         description:'This course covers broad topics in Expressive Arts',
         link:'/artQuiz'
@@ -185,7 +210,7 @@ const LessonsData = [
     ,
     {
         id:23,
-        image:'../images/life2.jpg',
+        image:lifeImage2,
         title:'LifeSkills Lessons PRI',
         description:'This course covers broad topics in LifeSkills',
         link:'/lifeQuiz'
@@ -194,7 +219,7 @@ const LessonsData = [
     ,
     {
         id:24,
-        image:'../images/bible2.jpg',
+        image:bibleImage2,
         title:'Bible Knowledge Lessons PRI',
         description:'This course covers broad topics in Bible Knowledge',
         link:'/bkQuiz'
@@ -203,7 +228,7 @@ const LessonsData = [
     ,
     {
         id:25,
-        image:'../images/mathematics2.jpg',
+        image:mathImage2,
         title:'Mathematics Lessons PRI',
         description:'This course covers broad topics in Mathematics',
         link:'/mathematicsQuiz'
@@ -211,7 +236,7 @@ const LessonsData = [
     },   
     {
         id:26,
-        image:'../images/adma.jpg',
+        image:admaImage,
         title:'Additional Mathematics SEC',
         description:'This course covers broad topics in Additional Mathematics',
         link:'/admaQuiz'
