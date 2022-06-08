@@ -37,13 +37,17 @@
     display: grid;
     grid-template: 60px 500px / 200px 2fr;
 }
+
 .hs--header--title{
     grid-column: 1 / span 2;
     grid-row: 1 / 2;
     display: flex;
+    width: 100px;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    cursor: pointer;
 }
 .hs--select--menu{
     display: flex;
@@ -78,10 +82,11 @@
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-top: 5px;
     height: 50px;
     background-color: rgb(17, 17, 44);
+    cursor: pointer;
 }
 .hs--lesson--title{
   
@@ -97,7 +102,7 @@
 .hs--navigatio--buttons{
     display: flex;
     align-items: center;
-    width: 70%;
+    width: 95%;
     height: 70px;
     justify-content: space-between;
     
@@ -109,8 +114,8 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    width: 100px;
-    height: 50px;
+    width: 90px;
+    height: 30px;
     border-radius: 5px;
     border: 1px solid blue;
 }
@@ -121,8 +126,8 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    width: 100px;
-    height: 50px;
+    width: 90px;
+    height: 30px;
     border-radius: 5px;
     border: 1px solid blue;
 
@@ -140,12 +145,36 @@
     background-color: rgb(17, 17, 56);
 }
 .hs--select--menu--container{
-    height: 50px;
+    height: 30px;
     border: none;
     color: white;
     background-color: rgb(16, 16, 45);
     border-radius: 5px;
 
+}
+@media (max-width:700px) {
+    .hs--lessons--grid--container{
+        display: grid;
+        grid-template: 60px 500px / 1fr;
+    }
+    .hs--lessons--grid{
+        height: 60%;
+        background-color: black;
+        position: absolute;
+        overflow-y: scroll;
+       
+    
+    }
+    .hs--lessons--grid--contents{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    
 }
 @media (max-width:400px) {
     .hs--goto{

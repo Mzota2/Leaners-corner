@@ -10,6 +10,11 @@ import { NavLink } from "react-router-dom";
   const [currentIndex , setCurrentIndex]= React.useState(0);
   const[score , setScore] = React.useState(0);
   const[clicked , setCliked]= React.useState(false);
+  const [topic , setTopic]= React.useState(false);
+
+  function handleTopic(){
+    setTopic(!topic);
+  }
  
 
   function handlePrevious(){

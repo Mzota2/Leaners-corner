@@ -100,6 +100,11 @@ export default function HistoryLessons(){
         })
     }
     }
+    const [topic , setTopic]= React.useState(false);
+
+    function handleTopic(){
+      setTopic(!topic);
+    }
 
     function handleNext(){
         setCurrentIndex(currentIndex + 1)
@@ -115,15 +120,20 @@ export default function HistoryLessons(){
         }
     }
 
+    function toggleOff(){
+        setTopic(false);
+    }
+
     const data = historyData.map(lesson =>{
         function showLesson(){
+            setTopic(false);
            setCurrentIndex(historyData.indexOf(lesson));
 
         }
        
         return (
             <div>
-                <p onClick={showLesson} className="hs--lessons" key={lesson.id}>{lesson.title}</p>
+                <p onClick={showLesson} className="hs--lessons" key={lesson.id}>{lesson.title} <i class=" fab fas fa-angle-double-right"></i></p>
 
             </div>
         )
@@ -132,7 +142,7 @@ export default function HistoryLessons(){
         <div>
             <div className="hs--lessons--grid--container">
                 <div className="hs--select--menu">
-                <h3 className="hs--header--title">Topics</h3>
+                <h3 onClick={handleTopic} className="hs--header--title"><i class="fa-solid fa-bars"></i>Topics</h3>
                     <select className="hs--select--menu--container" onClick={handleClick} onChange={handleLevel} value={formData.level} name="level">
                         <option value='all'>All</option>
                         <option value='form1'>Form 1</option>
@@ -145,9 +155,9 @@ export default function HistoryLessons(){
                 </div>
             
 
-                <p className="hs--lessons--grid">{data}</p>
+                {window.innerWidth <= 700 ? topic?<p className="hs--lessons--grid">{data}</p>:console.log('we'):<p className="hs--lessons--grid">{data}</p>}
 
-                <div className="hs--lessons--grid--contents">
+                <div onClick={toggleOff} className="hs--lessons--grid--contents">
                     <h1 className="hs--lesson--title">{historyData[currentIndex].title}</h1>
                     <div className="hs--navigatio--buttons">
                         <p onClick={handlePrevious} className="hs--lessons--previous">Previous</p>
