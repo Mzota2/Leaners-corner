@@ -1,22 +1,41 @@
 {
   "files": {
-    "main.css": "/Leaners-corner/static/css/main.02e11809.css",
-    "main.js": "/Leaners-corner/static/js/main.11d34bdc.js",
+    "main.css": "/Leaners-corner/static/css/main.32063782.css",
+    "main.js": "/Leaners-corner/static/js/main.c973d916.js",
+    "static/media/biology.jpg": "/Leaners-corner/static/media/biology.c7d0115bedc896a1d9cd.jpg",
+    "static/media/chemistry.jpg": "/Leaners-corner/static/media/chemistry.d5983f17ab8f122e38ab.jpg",
     "static/media/school1.jpg": "/Leaners-corner/static/media/school1.981b9d6eb9aa19d2c241.jpg",
     "static/media/aboutImage.png": "/Leaners-corner/static/media/aboutImage.3f80a71abd70b73ac361.png",
+    "static/media/social.jpg": "/Leaners-corner/static/media/social.ae9cc9b9aef6b03be1dc.jpg",
     "static/media/school2.png": "/Leaners-corner/static/media/school2.466890f931d34e77814e.png",
     "static/media/school.jpeg": "/Leaners-corner/static/media/school.cf96e4158f1df8cd7068.jpeg",
+    "static/media/chichewa2.jpg": "/Leaners-corner/static/media/chichewa2.4575d05fefce64b1d2d7.jpg",
     "static/media/assist.jpg": "/Leaners-corner/static/media/assist.3249cab703189a755152.jpg",
     "static/media/background.jpg": "/Leaners-corner/static/media/background.28f8925ddce8c08713ac.jpg",
+    "static/media/french2.jpg": "/Leaners-corner/static/media/french2.8acfba19ef85c020dad7.jpg",
+    "static/media/mathematics.jpg": "/Leaners-corner/static/media/mathematics.fc07de50865bdbef1ce0.jpg",
+    "static/media/geography.jpg": "/Leaners-corner/static/media/geography.d1de57a79458f68542be.jpg",
+    "static/media/english.jpg": "/Leaners-corner/static/media/english.28847c78c7113595fbce.jpg",
+    "static/media/life.jpg": "/Leaners-corner/static/media/life.28e1f287068263799168.jpg",
+    "static/media/life2.jpg": "/Leaners-corner/static/media/life2.28e1f287068263799168.jpg",
+    "static/media/physics.jpg": "/Leaners-corner/static/media/physics.4d5a3b2d5c764b643cd7.jpg",
+    "static/media/social2.jpg": "/Leaners-corner/static/media/social2.28991feb31bc044cdcbf.jpg",
+    "static/media/arts.jpg": "/Leaners-corner/static/media/arts.89515c59d9cfd9347e15.jpg",
+    "static/media/mathematics2.jpg": "/Leaners-corner/static/media/mathematics2.f75301fb5bd04ad2d4b3.jpg",
     "static/media/contact.jpg": "/Leaners-corner/static/media/contact.95c42366e930a3185ba0.jpg",
+    "static/media/history.jpg": "/Leaners-corner/static/media/history.283857ec55dcc030495d.jpg",
+    "static/media/bible2.jpg": "/Leaners-corner/static/media/bible2.d34a148a73a7ad60a575.jpg",
+    "static/media/business.jpg": "/Leaners-corner/static/media/business.a22ab31a2f302cc292db.jpg",
+    "static/media/agriculture2.jpg": "/Leaners-corner/static/media/agriculture2.81036a91522b9c9904f2.jpg",
+    "static/media/science.jpg": "/Leaners-corner/static/media/science.c431c029b6c034d1254f.jpg",
     "static/media/computer.png": "/Leaners-corner/static/media/computer.1a02fdb2e8f2e903eca1.png",
     "static/media/search.png": "/Leaners-corner/static/media/search.34e4c6f4447907076fa0.png",
     "index.html": "/Leaners-corner/index.html",
-    "main.02e11809.css.map": "/Leaners-corner/static/css/main.02e11809.css.map",
-    "main.11d34bdc.js.map": "/Leaners-corner/static/js/main.11d34bdc.js.map"
+    "main.32063782.css.map": "/Leaners-corner/static/css/main.32063782.css.map",
+    "main.c973d916.js.map": "/Leaners-corner/static/js/main.c973d916.js.map"
   },
   "entrypoints": [
-    "static/css/main.02e11809.css",
-    "static/js/main.11d34bdc.js"
+    "static/css/main.32063782.css",
+    "static/js/main.c973d916.js"
   ]
 }
