@@ -141,7 +141,7 @@ export default function FrenchLessons(){
         <div>
             <div className="hs--lessons--grid--container">
                 <div className="hs--select--menu">
-                <h3 onClick={handleTopic} className="hs--header--title"><i class="fa-solid fa-bars"></i>Topics</h3>
+                <h3 onClick={handleTopic} className="hs--header--title"><i className="fa-solid fa-bars"></i>Topics</h3>
                     <select className="hs--select--menu--container" onClick={handleClick} onChange={handleLevel} value={formData.level} name="level">
                         <option value='all'>All</option>
                         <option value='form1'>Form 1</option>

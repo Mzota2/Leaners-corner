@@ -57,7 +57,7 @@
     height: 60px;
     grid-column: 1 / span 2;
     grid-row: 1 / 2;
-    background-color: antiquewhite;
+    background-color: rgb(195, 196, 205);
     border: 1px solid grey;
 
 }
@@ -195,6 +195,11 @@
     }
     .goto{
         padding: 10px 0;
+    }
+    .hs--lesson--title{
+        font-size: 14px;
+        padding: 5px 0;
+        font-family: 'Poppins', sans-serif;
     }
     
 }

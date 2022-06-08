@@ -100,11 +100,7 @@ export default function HistoryLessons(){
         })
     }
     }
-    const [topic , setTopic]= React.useState(false);
-
-    function handleTopic(){
-      setTopic(!topic);
-    }
+ 
 
     function handleNext(){
         setCurrentIndex(currentIndex + 1)
@@ -122,6 +118,11 @@ export default function HistoryLessons(){
 
     function toggleOff(){
         setTopic(false);
+    }
+    const [topic , setTopic]= React.useState(false);
+
+    function handleTopic(){
+      setTopic(!topic);
     }
 
     const data = historyData.map(lesson =>{
