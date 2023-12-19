@@ -1,7 +1,7 @@
 {
   "name": "learners-corner",
   "version": "0.1.0",
-  "homepage": "https://mzota2.github.io/learners-corner",
+  
   "private": false,
   "dependencies": {
     "@emotion/react": "^11.11.1",
