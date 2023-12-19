@@ -1,0 +1,32 @@
+.footer--container{
+    align-self: flex-end;
+    margin-top: 10px;
+    width: 97%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+   
+}
+.founder--say{
+    margin-top: 20px;
+}
+.footer--title{
+    font-family: 'Poppins',sans-serif;
+    color: brown;
+}
+.footer--container{
+    padding: 1em 1em;
+}
+.footer--container > hr{
+    border-width: 2px;
+    width: 100%;
+}
+.footer--bottom{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.copy{
+    font-family: 'Poppins' , sans-serif;
+}

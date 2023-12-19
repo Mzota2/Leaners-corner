@@ -1,0 +1,369 @@
+.creator-section{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.creator-hero{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../Assets/creator.jpg');
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.background-overlay{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.064);
+}
+.hero-text{
+    width: 90%;
+    max-width: 600px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+}
+
+.hero-text h2{
+    font-size: 3rem;    
+    color: rgb(131, 37, 37);
+
+}
+.hero-text p{
+    font-size: 1.225rem;
+}
+.lc-btn{
+    padding: 0.5em 1em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.229);
+}
+
+.lc-btn:focus,
+.lc-btn:hover{
+    background-color: brown;
+    transition: ease 0.5s;
+    color: white;
+}
+.creator-tabs{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1em;
+
+}
+.creation h3{
+    z-index: 1;
+    margin-bottom: 1em;
+}
+.creation {
+    width: 27%;
+    min-width: 300px;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    
+}
+.creation-contents{
+    padding: 1.5em 2em;
+    width:80% ;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(230, 236, 238);
+}
+
+
+.c-subject-overlay{
+    background-color:#fdcd01 ;
+}
+.c-lesson-overlay{
+    background-color: #fe9601;
+}
+.c-quiz-overlay{
+    background-color:#7cec02 ;
+}
+
+.find-contents{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em 0em;
+}
+
+.find-btn{
+    width: 90%;
+    max-width: 200px;
+    padding: 0.5em 1.5em;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    background-color: brown;
+    cursor: pointer;
+}
+
+.find-btn:focus,
+.find-btn:hover{
+    background-color: black;
+    color: white;
+    transition: ease 0.5s;
+}
+
+.quiz-creator-container{
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.c-description-input{
+    font-size: 1rem;
+    padding: 0.5em;
+    font-family: 'Poppins';
+    resize: none;
+    border: 1px solid grey;
+    outline: none;
+}
+
+.c-title-input{
+    border: none;
+    font-size: 1rem;
+    border-bottom: 1px solid grey;
+    outline: none;
+    text-indent: 0.5em;
+}
+
+.c-title-input:focus,
+.c-title-input:hover {
+    border-bottom: 1px solid brown;
+}
+.c-description-input:focus,
+.c-description-input:hover{
+    border: 1px solid brown;
+}
+.close-creator-icon{
+    align-self: flex-end;
+    font-size: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.close-creator-icon:focus,
+.close-creator-icon:hover{
+    color: brown;
+    transition: ease 0.5s;
+}
+
+.c-file-input{
+    padding: 0.6em 1em;
+    background-color: rgba(127, 127, 127, 0.059);
+    outline: none;
+    cursor: pointer;
+    
+}
+.c-select-input{
+    padding: 0.3em 1em;
+    border-radius: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.c-select-input option{
+    cursor: pointer;
+    border-radius: 0;
+    background-color: white;
+}
+.c-contents-tabs{
+    align-self: center;
+    width:90%;
+    min-width: 300px;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    background-color: rgba(127, 127, 127, 0.059) ;
+}
+
+.c-tab-input{
+    font-size: 1.25em;
+    color: rgb(63, 63, 63);
+}
+.c-tab-input:hover,
+.c-tab-input:focus{
+    color: black;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.c-quiz-add{
+    width: fit-content;
+    padding: 0.1em 0.5em;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+}
+
+.c-quiz-remove{
+    background-color: brown;
+}
+.c-col-ad{
+    align-self: flex-end;
+}
+.c-col{
+    justify-content: space-between;
+}
+.c-col input{
+    cursor: pointer;
+}
+
+.l-creators-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.l-creators-title{
+    margin-top: 1em;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+.l-creators-subjects{
+    padding: 2em 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: rgb(250, 250, 250);
+    align-items: center;
+    max-height: 500px;
+    overflow-y: auto;
+}
+.l-subject-container{
+    cursor: pointer;
+    padding: 1em 1em;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    justify-content: space-between;
+    box-shadow: 0px 0px 2px rgba(165, 42, 42, 0.338);
+}
+
+.l-subject-container:hover,
+.l-subject-container:focus{
+    transition: ease 0.5s;
+    transform: scale(1.05);
+}
+
+.l-buttons-container{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.l-edit-btn{
+    background-color: #fdcd01;
+}
+.l-delete-btn{
+    background-color: rgb(225, 8, 8);
+}
+.l-btn{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.l-creator-find-container{
+    max-width: 400px;
+    align-self: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.l-creator-icon-container{
+    height: 150px;
+    width: 150px;
+}
+.l-creator-icon{
+    color: white;
+    font-size: 4rem;
+}
+
+@media (max-width:700px){
+    .l-subject-container{
+        align-items: baseline;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .l-buttons-container{
+        align-self: flex-end;
+    }
+    .l-edit-btn, .l-delete-btn{
+        padding: 0.4em 1em;
+        gap: 0.5em;
+    }
+}
+
+
+@media (max-width:500px) {
+    .hero-text h2{  
+        color: rgb(131, 37, 37);
+        font-size: 2.7rem;
+    }
+    
+    .content-creator-form{
+        width: 100%;
+        padding: 2em 0;
+    }
+
+    .create-btn{
+        
+        max-width: 200px;
+    }
+
+    .creator-tabs{
+        justify-content: center;
+    }
+
+    .creation {
+        width: 100%;
+        max-width: 300px;
+        
+    }
+}
+

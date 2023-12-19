@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header--container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color:  rgb(241, 243, 254);
+    background-size: cover;
+    padding: 0 1.8em;
+}
+.header-btn-container{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.header--title{
+    color: white;
+    width: fit-content;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+.ls--container{
+    width: 100%;
+    background-color: rgb(26, 26, 82);
+}
+.header--title:hover{
+    color: rgb(50, 105, 24);
+    cursor: pointer;
+}
+.input--container{
+    position: relative;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.course-btn{
+    padding: 0.5em 2em;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.course-btn + .course-btn{
+    background-color: brown;
+    color: white;
+}
+
+.course-btn:hover,
+.course-btn:focus{
+    opacity: 0.7;
+}
+.search--input{
+    border: none;
+    outline: none;
+    background-color: white;
+    box-shadow: 0px 0px 1px brown;
+    padding-right: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    text-indent: 20px;
+    color: black;
+    font-size: 17px;
+
+}
+.button--search{
+    position: absolute;
+    right: 0;
+    padding: 0 1em;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.lessons--container{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.l-lesson{
+    position: relative;
+    box-shadow: 0px 0px 2px rgb(162, 161, 161);
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(252, 252, 252);
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.background-overlay{
+    visibility: hidden;
+}
+
+
+.lesson--title{
+    font-size: 15px;
+    color: black !important;
+    font-family: 'Poppins' , sans-serif;
+}
+
+.lesson--description{
+    font-size: 13px;
+    color: rgb(46, 49, 52);
+}
+.context--container{
+    z-index: 2;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.lesson--image{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.on--level{
+    font-size: 14px;
+    padding: 2px 2px;
+    font-family: monospace, sans-serif;
+    width: 60px;
+    height: 60px;
+    color: rgb(12, 36, 87);
+    background-color:white ;
+    border-radius: 5px;
+}
+
+
+.lesson:hover .lesson--image ,
+.lesson:focus .lesson--image {
+    height: 100%;
+    transition: ease 0.2s;
+}
+.lesson:hover .context--container  ,
+.lesson:focus .context--container{
+    top: 20%;
+    position: absolute;
+    transition: ease 0.2s;
+}
+.lesson:hover .lesson--title{
+    color: white !important;
+    transition: ease 0.2s;
+}
+.lesson:focus .lesson--title{
+    color: white !important;
+    transition: ease 0.2s;
+}
+
+.lesson:hover .lesson--description{
+    color: white !important;
+    transition: ease 0.2s;
+}
+
+.lesson:focus .lesson--description{
+    color: white !important;
+    transition: ease 0.2s;
+}
+.lesson:hover .background-overlay,
+.lesson:focus .background-overlay{
+    visibility: visible;
+    transition: ease 0.2s;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.on--level:hover{
+    
+    color: white;
+    background-color: rgb(11, 11, 67);
+}
+
+.button--search:hover{
+    cursor: pointer;
+}
+.button--search:active{
+    transform: scale(1.2);
+}
+
+.l-online-quiz{
+    cursor: pointer;
+    max-width: 100%;
+    width: 500px;
+    padding: 1em 2em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(248, 251, 251);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.493);
+}
+
+.l-online-quiz:hover,
+.l-online-quiz:focus{
+    background-color: black;
+    color: white;
+    transition: ease 0.5s;
+}
+
+@media (max-width:800px) {
+    .header--container{
+        height: fit-content;
+        flex-direction: column;
+        gap: 1em;
+        padding: 0 0em;
+    }
+    .header-btn-container{
+        width: 100%;
+        background-color: rgb(250, 250, 250);
+        box-shadow: 0px 0px 1px brown;
+        order: 2;
+        align-self: center;
+        padding: 0.5em 1em;
+    }
+    .input--container{
+        margin-top: 1em;
+        width: 90%;
+        order: 1;
+    }
+    .search--input{
+        font-size: 0.85rem;
+        height: 35px;
+        background-color: white;
+        box-shadow: 0px 0px 1px brown;
+    }
+    .button--search{
+        height: 100%;
+    }
+    .course-btn{
+        padding: 0.4em 1em;
+    }
+
+    .l-lesson{
+        width: 200px !important;
+        height: 200px !important;
+    }
+   
+}
+
+@media (max-width:500px) {
+    .search--input{
+        font-size: 1.1rem;
+    }
+}

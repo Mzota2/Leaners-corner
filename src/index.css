@@ -7,141 +7,331 @@
 }
 body{
     position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --blue-color:rgb(241, 243, 254);
+    --grey-color:#736C6C;
+    --link-color:#405CBF;
+    --sign-color:#CCDBFF;
+}
+html{
+    overflow-x: hidden;
 }
 .menu--container{
     width: 100%;
     height: 10vh;
     background-color: rgb(12, 16, 54);
+    z-index: 100;
+
 }
+
+.l-user{
+    font-size: 1.125rem;
+    color: white !important;
+}
+.l-profile-image-container{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+}
+
+.l-profile-image{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.l-profile-image-container:hover,
+.l-profile-image-container:focus{
+    transition: ease 0.5s;
+    transform: scale(1.1);
+}
+
+
 .nav--items{
+    padding: 0 2em;
+    position: relative;
     margin: 0 auto;
     height: 100%;
-    width: 95%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
 }
+
 .title--container{
-    margin: 0 10px;
     font-family: 'Lobster';
-    font-size: 20px;
+    font-size: 1.25rem;
     color: whitesmoke;
+    width: fit-content;
     
 }
 .nav--title{
-    font-size: 25px;
+    min-width: fit-content;
+    font-size: 1.5265rem;
     color: white;
     width: 100%;
     text-decoration: none;
-    padding: 0 5px;
 }
-.nav--title:hover{
+.nav--title:hover,
+.nav--title:focus{
     cursor: pointer;
+    opacity: 0.8;
+
 }
-.item--container2 > .item{
+.item--container--desktop{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.item--container  .item{
     text-decoration: none;
-    padding: 0 27px;
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: 'Poppins', sans-serif;
 }
-.item:hover{
+.item:hover,
+.item:focus{
+    cursor: pointer;
     color: rgb(255, 196, 0);
 }
-.menu--icon{
+
+.item--container--mobile{
+    display: none;
+    
+}
+.sign-in-btn{
+    cursor: pointer;
+    padding: 0.3em 1em !important;
+    background-color: var(--title-color);
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 1.25rem;
+}
+
+.sign-in-btn:focus,
+.sign-in-btn:hover{
+    background-color: rgba(0, 128, 0, 0.86) !important;
+}
+
+.l-create-icon{
+    color: white;
+    font-size: 2.25rem;
+}
+.l-create-icon:hover,
+.l-create-icon:focus{
+    cursor: pointer;
+    transition: ease 0.5s;
+    color: brown;
+}
+@keyframes slideleft{
+    from{
+        top:-100%;
+    }
+
+    to{
+        top: 100%;
+    }
+}
+.l-user-profile-settings-container{
+    color: black;
+    animation-name: slideleft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    z-index: 100;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 50%;
+    max-width: 250px;
+    padding: 1em 2em;
+    background-color: white;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.213);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.l-settings-username{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+.l-del-account{
+    background-color: brown;
+    font-size: 1em;
+}
+.l-settings-btn{
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    background-color: rgb(42, 153, 163);
+}
+.l-mobile-menu-buttons-container{
     display: none;
 }
 
+@media (max-width:1000px) {
+    .item--container--desktop{
+        gap: 1em;
+    }
+    
+}
 
-@media (max-width:750px) {
+@media (max-width:800px) {
+    @keyframes slidedown{
+        from{
+            top:-100%;
+        }
+
+        to{
+            top: 0%;
+        }
+    }
+    .item--container--desktop{
+        display: none;
+    }
+    
+    .item--container--mobile{
+        right: 0;
+        position: absolute;
+        animation-name: slidedown;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        z-index: 3;
+        gap: 1em;
+        justify-content: baseline;
+        padding: 2em 2em;
+        align-self: flex-end;
+        width: 50%;
+        max-width: 300px;
+        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+        color: black;
+        align-items: baseline;
+        background-color: rgb(255, 255, 255);
+        box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.631);
+    }
+    .item--container--desktop{
+        display: none;
+    }
+    .l-create-icon{
+        color: black;
+    }
     .title--container{
         margin: 0 5px;
         font-family: 'Lobster';
         font-size: 20px;
         color: whitesmoke;
+        width: fit-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
         
     }
     .nav--title{
         display: flex;
         align-items: center;
         width: 100%;
-        font-size: 25px;
+      
         
     }
-    .title--container{
-        width: 90%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+
     .menu--container{
-        position: relative;
+        height: 10vh;
+        /* position: relative;
         width: 100%;
-        height: 40px;
-        background-color: rgb(12, 16, 54);
-     
+        height: 10vh;
+        background-color: rgb(12, 16, 54); */
+    
     }
-    .menu--icon{
-        width: 100%;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: end;
-    }
+   
     .menu--icon:hover{
         cursor: pointer;
     }
   
     .nav--items{
+        padding: 0 1em;
         margin: 0 auto;
         height: 100%;
         width: 100%;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: space-between;
     
     }
     .title--container{
-        height: 90%;
-        margin: 0 10px;
         font-family: 'Lobster';
         color: whitesmoke;
         border-radius: 5px;
+        display: flex;
+        align-items: center;
     }
-    .item--container > .item{
-        font-size: 17px;
-        text-decoration: none;
-        padding: 0 27px;
+    .l-mobile-menu-buttons-container{
+        display: flex;
+        align-items: center;
+        gap: 2em;
+    }
+    .menu--icon{
         color: white;
-       
-        font-family: 'Poppins', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: end;
     }
+
+    .item--container--mobile .item{
+        font-size: 1rem;
+    }
+
+    .l-profile-image-container-mobile{
+        display: block;
+        
+    }
+    
   
-    .item--container{
-        width: 100%;
+   
+    .item--container--mobile .item{
+        color: black;
+    }
+    .item:hover,
+    .item:focus{
+        color: brown;
+    }
+    
+    .mobile--extra--items{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items:center;
-        z-index: 1;
-        background-color: rgb(12, 16, 54);
+        gap: 1em;
     }
-    .item--container2 > .item{
-        display: none;
-        text-decoration: none;
-        padding: 0 27px;
+    
+    .sign-in-btn:hover,
+    .sign-in-btn:focus{
+        background-color: black;
         color: white;
-        font-size: 20px;
-        font-family: 'Poppins', sans-serif;
     }
     
-  
-    .item:hover{
-        color: rgb(13, 13, 41);
-        background-color: white;
+}
+
+@media (max-width:500px) {
+    .menu--container{
+        height: 7vh;
     }
-  
     
+    .l-profile-image-container-mobile{
+        height: 30px;
+        width: 30px;
+    }
+    .item--container--mobile .item{
+        font-size: 1.1rem;
+    }
 }

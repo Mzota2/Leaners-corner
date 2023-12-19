@@ -10,6 +10,8 @@
 
 # production
 /build
+.env
+/src/Designs
 
 # misc
 .DS_Store
