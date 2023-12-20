@@ -77,11 +77,11 @@ export default function Home(){
                        
                         <div className="title--containers">
                             <div className="l-service-icon-container">
-                                <SiAppwrite onClick={()=>{navigate('/learners-corner/curriculum')}} className="l-service-icon"/>
+                                <SiAppwrite onClick={()=>{navigate('/learners-corner/online/create')}} className="l-service-icon"/>
                             </div>
 
                             <div className="l-service-text">
-                                <NavLink className={'l-service-name'} to={'/learners-corner/curriculum'}>Content Creation</NavLink>
+                                <NavLink className={'l-service-name'} to={'/learners-corner/online/create'}>Content Creation</NavLink>
                                 <p>if you are a teacher this is where you are going to spend most of your time creating content for your students</p>
                             </div>
                             
