@@ -91,7 +91,7 @@ function SignIn() {
       onSubmit={handleSubmit}
       
       >{({handleChange, handleSubmit, errors, values, touched})=>(
-        <form noValidate onSubmit={handleSubmit} className='sign-form signin-form' autoComplete='off'>
+        <form noValidate onSubmit={handleSubmit} className='signin-form' autoComplete='off'>
           
           
           <div className="sign-image-container-contents">

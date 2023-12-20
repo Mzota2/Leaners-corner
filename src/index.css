@@ -108,13 +108,15 @@ html{
     
 }
 .sign-in-btn{
+    display: inline-block;
     cursor: pointer;
-    padding: 0.3em 1em !important;
+    padding: 0.2em 1em !important;
     background-color: var(--title-color);
     color: white;
     outline: none;
     border: none;
     font-size: 1.25rem;
+    text-decoration: none;
 }
 
 .sign-in-btn:focus,
@@ -332,6 +334,6 @@ html{
         width: 30px;
     }
     .item--container--mobile .item{
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 }

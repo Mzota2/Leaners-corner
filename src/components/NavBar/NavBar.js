@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { selectUser, setToken, setUser } from "../../state/usersSlice";
 import { appUrl, logOut } from "../../Helpers";
 import { IoCreateOutline } from "react-icons/io5";
@@ -68,8 +68,8 @@ export default function NavBar(){
         return ()=>{
             document.removeEventListener('mousedown', closeMenu);
         }
-    }, [])
- 
+    }, []);
+
     return(
         <div className="menu--container">
             
@@ -111,7 +111,7 @@ export default function NavBar(){
                         <img className="l-profile-image" src={`${!user?.profileImage? avatar:`${appUrl}uploads/${user?.profileImage.slice(8)}`}`} alt="profile" />
                     </div>
                     
-                    <button onClick={signOut} className='sign-in-btn ' >Sign out</button>
+                    <Link to={'/learners-corner/signin'} disabled={isLoading}  onClick={signOut} className='sign-in-btn ' >Sign out</Link>
                 </div>}
                 
                 {menu?<div ref={menuNav}  className="item--container item--container--mobile">
@@ -128,7 +128,7 @@ export default function NavBar(){
                      <div className="item--container mobile--extra--items">
                         {user?.role === 'teacher'? <IoCreateOutline className="l-create-icon" onClick={()=> navigate('/learners-corner/online/create')}></IoCreateOutline>:<></>}
                         <p className="active item">{user?.username}</p>
-                        <button onClick={signOut} className=' sign-in-btn' >Sign out</button>
+                        <Link to={'/learners-corner/signin'} disabled={isLoading} onClick={signOut} className=' sign-in-btn' >Sign out</Link>
                         
                     </div>
                     }

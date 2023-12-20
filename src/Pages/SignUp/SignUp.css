@@ -227,7 +227,7 @@
     }
     .signin-form{
         width: 100%;
-        height: fit-content;
+        min-height: fit-content;
         padding: 2em 2em;
     }
     .sign-image-container-contents{
