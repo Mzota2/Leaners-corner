@@ -176,24 +176,28 @@ function SignUp() {
         </form>:
 
         <div className="l-email-sent-container">
-          <h3 className="footer--title">Learners corner</h3>
-          <h3>Please Verify Your Email</h3>
-          <p>You are almost there! We have sent an email to <br /> <strong>{values.email}</strong></p>
-          <p>Just click the link in that email to complete your signup. <br /> If you don't see it, you may need to <strong>check your spam</strong> folder. </p>
-          <p>Still can't find it ? </p>
-          <button type='button' className='l-btn btn-resend-email'>Resend Email</button>
-          <p>Need help? <a href="/learners-corner/contact">Contact us</a></p>
+
+          <div className="l-email-sent-main-container">
+            <h3 className="footer--title">Learners corner</h3>
+            <h3>Please Verify Your Email</h3>
+            <p>You are almost there! We have sent an email to <br /> <strong>{values.email}</strong></p>
+            <p>Just click the link in that email to complete your signup. <br /> If you don't see it, you may need to <strong>check your spam</strong> folder. </p>
+            <p>Still can't find it ? </p>
+            <button type='button' className='l-btn btn-resend-email'>Resend Email</button>
+            <p>Need help? <a href="/learners-corner/contact">Contact us</a></p>
+          </div>
+          
         </div>
       )}
       </Formik>
-      <div className='sign-image-container'>
+      {!isMailSent?<div className='sign-image-container'>
           <div className="sign-image-container-contents">
             <h2 className='signup-text'>Already Signed Up ?</h2>
             <p>Login to your account so you can continue enjoying our online classes and quizzes.</p>
             <button className='l-login-btn' onClick={()=>{navigate('/learners-corner/signin')}}>LOGIN</button>
           </div>          
 
-      </div>
+      </div>:<></>}
     </div>
   )
 }
