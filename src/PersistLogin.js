@@ -25,7 +25,7 @@ function PersistLogin() {
             
         } catch (error) {
             console.log(error)
-            message.error('Try again later ! Something went')
+            
         }finally{
             console.log('done')
             setIsLoading(false);
