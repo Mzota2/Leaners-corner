@@ -51,7 +51,7 @@ export default function NavBar(){
 
     function closeMenu(e){
         
-        if(!menuNav.current.contains(e.target) && !e.target.classList.contains('menu-icon')){
+        if(!menuNav?.current?.contains(e.target) && !e.target.classList?.contains('menu-icon')){
             console.log('working')
             setMenu(false);
         }
