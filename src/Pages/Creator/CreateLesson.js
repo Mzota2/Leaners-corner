@@ -98,10 +98,10 @@ function CreateLesson({handleShowLesson}) {
                 <select onChange={handleChange} value={lesson.subjectId} className='c-select-input' name="subjectId" id="lesson">
                     <option value=""></option>
                     {subjects?.map((subject)=>{
-                        const {title, _id} = subject;
+                        const {title, _id, form} = subject;
                         console.log(_id);
                         return(
-                            <option key={_id} value={_id}>{title}</option>
+                            <option key={_id} value={_id}>{title} {form}</option>
                         )
                     })}
                     

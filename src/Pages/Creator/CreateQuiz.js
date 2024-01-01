@@ -164,9 +164,9 @@ function CreateQuiz({handleShowQuiz}) {
                         <option value=""></option>
                         {
                             subjects?.map((subject)=>{
-                                const {_id, title}= subject;
+                                const {_id, title, form}= subject;
                                 return(
-                                    <option key={_id} value={_id}>{title}</option>
+                                    <option key={_id} value={_id}>{title} {form}</option>
                                 )
                             })
                         }

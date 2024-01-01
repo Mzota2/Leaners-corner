@@ -143,8 +143,8 @@ function SignUp() {
             </div>
 
             <div className="col">
-              <input className='checkPassword' id='teacher' type="radio" name='role' value={'teacher'} onChange={handleChange}/>
-              <label htmlFor="student">Teacher</label>
+              <input disabled className='checkPassword' id='teacher' type="radio" name='role' value={'teacher'} onChange={handleChange}/>
+              <label style={{color:"#969696dd"}} htmlFor="student">Teacher</label>
 
             </div>
 

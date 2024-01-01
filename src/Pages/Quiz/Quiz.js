@@ -139,6 +139,7 @@ const scoreGrade= overAllScore <=49? 'poor':overAllScore <=65 ?'good': overAllSc
 function handlePlayAgain(){
   setIndex(0);
   setScore(0);
+  setSelectedQuiz(quizzes[0])
   setViewAnswer(false);
 }
 
@@ -158,10 +159,11 @@ React.useEffect(()=>{
   if(foundQuizzes?.length){
     setSelectedQuiz([quizzes[index]]);
   }
-}, [quizzesStatus, foundQuizzes, dispatch, subjectId, usersStatus, users, subjectsStatus, allSubjects]);
+
+  
+}, [quizzesStatus, foundQuizzes, dispatch, usersStatus, subjectsStatus, index]);
 
 React.useEffect(()=>{
-  console.log(authors)
   
   document.addEventListener('mousedown', closeSearch);
         
@@ -269,7 +271,6 @@ return(
       
     </nav>
     <br />
-
     <main>
 
       <div  className="l-top"></div>
@@ -280,8 +281,8 @@ return(
 
           {!isCompleted?<div className="inner_container">
              
-              {selectedQuiz?.map((quiz)=>{
-                      const {question,choices} = quiz;
+              {selectedQuiz?.length? selectedQuiz?.map((quiz)=>{
+                      const {question, choices} = quiz;
                     return(
                       <div className="l-inner-inner-container" key={quiz._id} style={{width:'100%'}}>
                         <p id="question">{question}</p> 
@@ -304,7 +305,7 @@ return(
                                       }
                                       setTimeout(()=>{
                                           setIndex(prev => prev = prev +1);
-                                      }, 1500)
+                                      }, 1500);
                                       
                                     }
                                 }} >
@@ -317,7 +318,7 @@ return(
                       
                         
                     )
-                  })}
+                  }):''}
              
           </div>:
 
@@ -331,9 +332,9 @@ return(
               <h4 className="l-subject">{shortenString(subject)} {form}</h4>
             </div>
            
-            {score > quizzes?.length / 2 && !viewAnswer ? <p className={`l-marking-message l-marking-message-${scoreGrade}`}>Congratulations 🎉 you have passed <span> {overAllScore}% </span> of the questions</p>:
+            {score >= (quizzes?.length / 2) && !viewAnswer ? <p className={`l-marking-message l-marking-message-${scoreGrade}`}>Congratulations 🎉 you have passed <span> {overAllScore}% </span> of the questions</p>:
             
-            !score > quizzes?.length / 2?
+            !score >= quizzes?.length / 2?
             <p className={`l-marking-message l-marking-message-${scoreGrade}`}>Try again ! you have failed <span>{100 - overAllScore}% </span>of the questions</p>:<></>}
             {!viewAnswer && score > quizzes?.length / 2 ? <button type="button" className=" l-view-answer-btn" onClick={()=>setViewAnswer(true)}>View Answers</button>:
              !score > quizzes?.length / 2?
@@ -349,6 +350,7 @@ return(
               quizzes?.map((quiz)=>{
                 const {choices, question}= quiz;
                 return(
+                  
                   <div className="l-quiz-marking-c" key={quiz._id} style={{width:'100%'}}>
                   <p id="question">{question}</p> 
   

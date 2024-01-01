@@ -23,14 +23,10 @@ export default function Subjects(){
     // console.log(subjectData);
 
 
-    const [foundQuizzes] = quizzes?.map((quiz)=>{
+    const foundQuizzes = subjects.filter((subject)=>{
+       return quizzes?.find((quiz)=> quiz.subjectId === subject._id);
         
-        return subjects?.filter((subject)=>{
-         
-            const fSubjects = subject?._id === quiz?.subjectId;
-            return fSubjects;
-        })
-    })
+    });
   
     const [searchValue, setSearchValue] = React.useState({
         search:'',
@@ -92,15 +88,14 @@ export default function Subjects(){
      const data = sortDate(subjectData)?.map((subject)=>{ 
       
         const {title, description, form, subjectImage} = subject;
-        console.log(subjectImage.slice(8));
-            const image = subjectImage.slice(8);
+        const image = subjectImage.slice(8);
         return(
             
             <div onClick={()=> navigate(`/learners-corner/online/lesson/${subject._id}`)} key={subject?._id} style={styles} className="l-lesson">
                 <img className="lesson--image" src={`${appUrl}uploads/${image}`} alt='subject'></img>
                 <div className="context--container">
                     <h3 className="lesson--title">{shortenString(title)} {form} </h3>
-                    <p className="lesson--description">{description.length > 36? description.substring(36)+'...': description}</p>
+                    <p className="lesson--description">{description.length > 36? description.substring(0, 48) +'...': description}</p>
                 </div>
                 
                 <div className="background-overlay"></div>
@@ -109,6 +104,7 @@ export default function Subjects(){
 
         )
     });
+
 
     const quizData = sortDate(foundQuizzes)?.map((quiz)=>{
         const {title, form} = quiz;
@@ -120,13 +116,19 @@ export default function Subjects(){
             </div>
         )
 
-    })
+    });
+
+
 
     React.useEffect(()=>{   
+
+        console.log(quizzes)
+        console.log('found: '+ foundQuizzes)
           
         if(status === 'idle'){
             dispatch(getSubjects())
         }
+        
         if(quizzesStatus === 'idle'){
             dispatch(getQuizzes())
         }

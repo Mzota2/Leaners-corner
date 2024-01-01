@@ -98,15 +98,11 @@ export default function Lesson(){
             const subjectLessons = foundLessons?.filter(lesson => lesson.subjectId === subjectId);
             setLessons(subjectLessons);
             setSelectedLesson([subjectLessons[0]])
+            const found = subjectLessons[0];
+            setAuthor(users?.find((user)=> user?._id === found?.userId ));
         }
 
-        if(users?.length && selectedLesson.length){
-            const [found] = selectedLesson;
-            setAuthor(users.find((user)=> user._id === found.userId ));
-        }
-
-        console.log(author);
-      
+        
 
     }, [lessonStatus, dispatch, foundLessons, subjectId, userStatus, users]);
 
@@ -118,7 +114,7 @@ export default function Lesson(){
 
     React.useEffect(()=>{
 
-    }, [searchLessons]);
+    }, [searchLessons, author]);
     
     if(lessonStatus ==='idle'){
         return <Loader/>

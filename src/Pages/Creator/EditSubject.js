@@ -40,7 +40,7 @@ function EditSubject() {
     const editSubject = async(formData)=>{
         try {
             setIsLoading(true);
-            const response = await axios.put(`${appUrl}subjects/${id}`, subject);
+            const response = await axios.put(`${appUrl}subjects/${id}`, formData);
             const {data} = response;
             message.success('Subject updated');
             
